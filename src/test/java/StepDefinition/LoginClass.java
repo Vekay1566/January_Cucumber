@@ -54,7 +54,7 @@ public class LoginClass {
 			   .getText().trim(),"Login Successfully");
 	   driver.close();
 	}
-	// change created
+	// change created on the /1/27
 	@And("user hits enter key")
 	public void user_hits_enter_key() {
 		Actions action = new Actions(driver);
