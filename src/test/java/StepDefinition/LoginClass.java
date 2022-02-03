@@ -42,7 +42,7 @@ public class LoginClass {
 	   WebElement submitBtn = driver.findElement(By.name("submit"));	
 	   submitBtn.click();
 	   }
-	
+	// Made Changes
 	@Then("User should be able to login")
 	public void user_should_be_able_to_login() {
 	   Assert.assertEquals(driver.getCurrentUrl(), "http://demo.guru99.com/test/newtours/"+"login_success.php");
