@@ -20,10 +20,14 @@
 
 
 
-Feature: All Homepage Function
-User should be forward to specific pages:
+Feature: Check Service Drop down and IT Training Link text Functionality 
+User launches Transfotech academy page and Service Drop down is visible
 
-Scenario: Register link 
+Scenario: Service Drop down button and IT Training functionality
+
 Given User loads application
-When User clicks Register Button
-Then User should land on Register Page
+When  User moves cursor on Service Drop menu
+And   User clicks on IT training link
+And   User lands on IT training page
+And   User clicks on Apply Now button
+Then  User lands on student registration page
