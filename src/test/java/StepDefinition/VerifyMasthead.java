@@ -42,6 +42,7 @@ public class VerifyMasthead {
 	public void User_navigates_to_transfotech_home_page()	{
 		driver.get("https://transfotechacademy.com/");				
 
+		driver.close();
 	}
 
 }
