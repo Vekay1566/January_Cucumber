@@ -41,10 +41,9 @@ public class ServiceJobPlacement {
 		}
 	@And("User lands on Job placement page")
 	public void User_lands_on_Job_placement_page()  {
-		String apUrl = driver.getCurrentUrl();
-		String epUrl ="https://transfotechacademy.com/job-placement/";
-		Assert.assertEquals( epUrl,apUrl);
-		}
+		  System.out.println("Url of Job Placement page:"+ driver.getCurrentUrl());
+	}
+		
 	@And("User clicks on Book an Appointment button")
 	public void User_clicks_on_Book_an_Appointment_button() {
 		driver.findElement(By.xpath("//span[@class='elementor-icon-list-text']")).click();	
