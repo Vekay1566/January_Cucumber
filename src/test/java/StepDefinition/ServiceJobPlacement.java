@@ -33,9 +33,8 @@ public class ServiceJobPlacement {
 	public void User_mouse_hover_on_Service_Drop_menu() {	
 		Actions action = new Actions(driver);
 		WebElement service = driver.findElement(By.linkText("Service"));
-		action.moveToElement(service);
-		action.doubleClick();
-		action.build().perform();
+		action.moveToElement(service).build().perform();
+		action.click().build().perform();
 		
 		
 		}	
