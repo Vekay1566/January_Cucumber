@@ -26,7 +26,9 @@ public class ServiceJobPlacement {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get("https://transfotechacademy.com/");	
+		
 		}	
+	
 	@When("User mouse hover on Service Drop menu")
 	public void User_mouse_hover_on_Service_Drop_menu() {	
 		Actions action = new Actions(driver);
@@ -41,11 +43,11 @@ public class ServiceJobPlacement {
 	public void User_lands_on_Job_placement_page()  {
 		String apUrl = driver.getCurrentUrl();
 		String epUrl ="https://transfotechacademy.com/job-placement/";
-		Assert.assertEquals(apUrl, epUrl);
+		Assert.assertEquals( epUrl,apUrl);
 		}
 	@And("User clicks on Book an Appointment button")
 	public void User_clicks_on_Book_an_Appointment_button() {
-		driver.findElement(By.xpath("//span[text()='Book an Appoinment']")).click();	
+		driver.findElement(By.xpath("//span[@class='elementor-icon-list-text']")).click();	
 		
 		driver.close();	
 	}
