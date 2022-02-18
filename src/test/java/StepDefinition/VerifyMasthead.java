@@ -18,7 +18,7 @@ import io.cucumber.java.en.When;
 public class VerifyMasthead {
 	WebDriver driver;
 	
-	@Given("User loads applications")
+	@Given("User loads the application")
 	public void user_loads_applications() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -28,7 +28,7 @@ public class VerifyMasthead {
 		}
 	@When("Logo displayed in masthead")
 	public void Logo_displayed_in_masthead() {
-		String tpA = driver.getTitle();
+		String tpA = driver.getCurrentUrl();
 		String tpE = "https://transfotechacademy.com/";
 		Assert.assertEquals(tpA, tpE);
 		}

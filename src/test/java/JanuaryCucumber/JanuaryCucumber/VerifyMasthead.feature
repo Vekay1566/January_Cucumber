@@ -21,20 +21,9 @@ Feature: Masthead functionality
 Check masthead functionality
  
  
-Scenario 1: Transfotech logo function
-    Given 	User loads applications
-    When 		Logo displayed in masthead
-    Then	  User clicks on transfotech logo 		
-    And 		User navigates to transfotech home page
-    
-#Scenario 2: Displaying call icon
-#		Given   User loads application
-#		Then 		call icon should be displayed
-#		
-#Scenario 3: Displaying email icon
-  #	Given   User loads application
-#		Then 		Email icon should be displayed
-#		
-#Scenario 4: Displaying address icon
-#		Given   User loads application
-#		Then 		Address icon should be displayed
+Scenario: Transfotech logo function
+
+Given User loads the application
+When 	Logo displayed in masthead
+Then  User clicks on transfotech logo 		
+And 	User navigates to transfotech home page
