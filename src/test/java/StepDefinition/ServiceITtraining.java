@@ -32,6 +32,7 @@ public class ServiceITtraining {
 		Actions action = new Actions(driver);
 		WebElement service = driver.findElement(By.linkText("Service"));
 		action.moveToElement(service).build().perform();
+		action.click().build().perform();
 		}	
 	@And("User clicks on IT training link")
 	public void User_clicks_on_IT_training_link() {
@@ -41,11 +42,15 @@ public class ServiceITtraining {
 	public void User_lands_on_IT_training_page()  {
 		String apUrl = driver.getCurrentUrl();
 		String expectedPageUrl ="https://transfotechacademy.com/it-training/";
-		Assert.assertEquals(apUrl, expectedPageUrl);
+		Assert.assertEquals(expectedPageUrl,apUrl);
 		}
 	@And("User clicks on Apply Now Button")
 	public void User_clicks_on_Apply_Now_Button() {
-		driver.findElement(By.linkText("Apply Now")).click();		
+		Actions action = new Actions(driver);
+		WebElement service = driver.findElement(By.linkText("Apply Now"));
+		action.moveToElement(service).build().perform();
+		action.click().build().perform();
+	
 		}
 	@Then("User land on student registration page")
 	public void User_lands_on_student_registration_page() {
